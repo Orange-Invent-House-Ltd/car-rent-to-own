@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Helvetical Neue";
+  src: url("./assets/fonts/HelveticaNeueBoldCondensed.woff2") format("woff2"),
+    url("./assets/fonts//HelveticaNeueBoldCondensed.woff") format("woff"),
+    url("./assets/fonts//HelveticaNeueBoldCondensed.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticalNeue";
+  src: url("./assets/fonts/HelveticaNeueCyr-Bold.woff2") format("woff2"),
+    url("./assets/fonts/HelveticaNeueCyr-Bold.woff") format("woff"),
+    url("./assets/fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticalNeue";
+  src: url("./assets/fonts/HelveticaNeueCyr-Light.woff2") format("woff2"),
+    url("./assets/fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+    url("./assets/fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HelveticalNeue";
+  src: url("./assets/fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+    url("./assets/fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+    url("./assets/fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticalNeue";
+  src: url("./assets/fonts/HelveticaNeueCyr-Black.woff2") format("woff2"),
+    url("./assets/fonts/HelveticaNeueCyr-Black.woff") format("woff"),
+    url("./assets/fonts/HelveticaNeueCyr-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+html,
+body {
+  @apply font-HelveticalNeue scroll-smooth;
+}
+.navMenu {
+  @apply text-white bg-secondary-dark  w-full min-h-[350px] fixed top-[4.9rem] transition-all z-50;
+}
+
+/* no scrollbar */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.embla {
+  position: relative;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  transition: transform 0.2s ease-in-out;
+}
+
+.embla__slide {
+  position: relative;
+  min-width: 100%;
+}
+
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #081f3f;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.embla__button--prev {
+  left: 1rem;
+}
+
+.embla__button--next {
+  right: 1rem;
+}
