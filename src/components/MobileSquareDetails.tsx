@@ -7,18 +7,18 @@ import CurrencyFormatter from "./resueable/currencyFormat";
 import { Link } from "react-router-dom";
 
 interface typeOfP {
-  productData: any;
+  currentCar: any;
   Loading: boolean;
 }
 
-const MobileSquareDetails = ({ productData, Loading }: typeOfP) => {
+const MobileSquareDetails = ({ currentCar, Loading }: typeOfP) => {
   return (
     <div className="relative m-auto w-[265px] md:min-h-[350px] bg-white rounded-[10px] overflow-hidden  mt-[-5rem] z-40 mb-[3rem]">
       <div className="text-[30px] bg-secondary-light text-center text-white h-[71px]  p-5">
         {Loading ? (
           <p>Loading....</p>
         ) : (
-          <CurrencyFormatter amount={productData?.price} />
+          <CurrencyFormatter amount={currentCar?.price} />
         )}
       </div>
 
@@ -30,7 +30,7 @@ const MobileSquareDetails = ({ productData, Loading }: typeOfP) => {
             <img src={model} alt="" />
             <p className="text-[#433F3E]  text-[13px]">Model</p>
           </div>
-          <p className="text-[#151413] text-[16px]">{productData?.model}</p>
+          <p className="text-[#151413] text-[16px]">{currentCar?.model}</p>
         </div>
         {/*  */}
         <div className="w-full flex items-center justify-between mb-6">
@@ -39,7 +39,7 @@ const MobileSquareDetails = ({ productData, Loading }: typeOfP) => {
             <img src={engine} alt="" />
             <p className="text-[#433F3E]  text-[13px]">Engine type</p>
           </div>
-          <p className="text-[#151413] text-[16px]">{productData?.engine}</p>
+          <p className="text-[#151413] text-[16px]">{currentCar?.engine}</p>
         </div>
         {/*  */}
         <div className="w-full flex items-center justify-between mb-6">
@@ -48,9 +48,7 @@ const MobileSquareDetails = ({ productData, Loading }: typeOfP) => {
             <img src={passangers} alt="" />
             <p className="text-[#433F3E]  text-[13px]">Passangers</p>
           </div>
-          <p className="text-[#151413] text-[16px]">
-            {productData?.passangers}
-          </p>
+          <p className="text-[#151413] text-[16px]">{currentCar?.passangers}</p>
         </div>
         {/*  */}
         <div className="w-full flex items-center justify-between mb-6">
@@ -60,7 +58,7 @@ const MobileSquareDetails = ({ productData, Loading }: typeOfP) => {
             <p className="text-[#433F3E]  text-[13px]">Max power</p>
           </div>
           <p className="text-[#151413] text-[16px]">
-            {productData?.max_power}HP
+            {currentCar?.max_power}HP
           </p>
         </div>
         {/*  */}
@@ -75,7 +73,7 @@ const MobileSquareDetails = ({ productData, Loading }: typeOfP) => {
         {/*  */}
       </div>
       <div className="w-full text-center px-7">
-        <button className="bg-[#86E900] text-[#fff] text-[16px] py-3 px-10  rounded-md transition-all duration-500 ease-out  hover:bg-primary w-full">
+        <button className="bg-[#86E900] text-[#fff] text-[16px] py-3 px-10  rounded-md transition-all duration-500 ease-out  hover:bg-primary-light w-full">
           Load more
         </button>
       </div>

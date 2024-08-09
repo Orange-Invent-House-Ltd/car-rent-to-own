@@ -44,15 +44,14 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div
-      style={{ backgroundImage: `url(${authbg})` }}
-      className="bg-cover bg-center min-h-screen flex justify-center items-center"
-    >
-      <div className="md:w-[707px] w-[349px] h-auto bg-[#FAFAFA] bg-opacity-50 backdrop-blur-md rounded-[18px] p-10">
+    <div className=" grid md:grid-cols-2 items-center md:min-h-screen">
+      <img src={authbg} alt="" className=" md:block h-[100%]" />
+      {/* Form */}
+      <div className=" w-full bg-[#FAFAFA]  rounded-[18px] p-10 md:px-[4rem]   ">
         <div className="">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="My Balance Logo" className="cursor-pointer" />
-            <p className="text-primary ml-2 text-[18px]">rent2own</p>
+            <p className="text-primary-light ml-2 text-[18px]">rent2own</p>
           </Link>
         </div>
         <h1 className="md:text-[36px] text-[24px] text-[#0A0B0A] mt-3">
@@ -69,6 +68,7 @@ const Login: React.FC = () => {
                 name="email"
                 label="Email"
                 placeholder="e.g@example.com"
+                variant="long"
               />
             </div>
             <div className="mt-4 ">
@@ -88,7 +88,7 @@ const Login: React.FC = () => {
                 />
               </div>
             </div>
-            <button className="w-full bg-primary py-2 px-[4rem] rounded-[6px] text-white mt-6  ">
+            <button className="w-full bg-primary-light py-2 px-[4rem] rounded-[11px] text-white mt-6  ">
               Sign in
             </button>
           </form>
@@ -99,8 +99,8 @@ const Login: React.FC = () => {
             Sign up
           </Link>
         </p>
-        <p className="text-[#0A0B0A] text-[14px] w-full mt-10 text-center">
-          <Link to="/forgot-password" className="font-medium">
+        <p className="text-[#0A0B0A] text-[14px] w-full mt-5 md:text-center">
+          <Link to="/forgot-password" className="font-medium underline">
             Forgot password
           </Link>
         </p>

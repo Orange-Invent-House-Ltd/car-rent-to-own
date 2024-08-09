@@ -1,14 +1,17 @@
 function How_it_works() {
   return (
-    <section className="w-full bg-[#fff] md:px-[21%] px-3 md:py-[6rem] py-10 ">
-      <p className=" w-full md:text-[37px] text-[24px] text-[#2B2928] text-wrap leading-10 font-black md:mb-9 mb-2">
+    <section
+      className="w-full bg-[#fff] lg:px-[21%] px-3 lg:py-[6rem] py-10 how-it-works "
+      id="howitworks"
+    >
+      <p className=" w-full lg:text-[37px] text-[24px] text-[#2B2928] text-wrap leading-10 font-black lg:mb-9 mb-2">
         How Car Rent-To-Own Works
       </p>
-      <div className=" w-full md:grid grid-cols-2  block ">
+      <div className=" w-full lg:grid grid-cols-2  block gap-10 ">
         {/*  */}
-        <div className=" flex md:items-center items-start  bg-[#E8F1FC] border border-[#B1CEF5] md:w-[525px] w-full md:h-[250px] h-[200px] md:px-[30px] pl-5 pr-7 py-[20px] rounded-lg md:mb-0 mb-6">
+        <div className="  flex lg:items-center items-start  bg-[#E8F1FC] border border-[#B1CEF5] lg:w-[100%] w-full lg:h-[250px] h-[200px] lg:px-[30px]  pl-5 pr-7 py-[20px] rounded-lg lg:mb-0 mb-6">
           <h1
-            className="md:flex-[25%] text-center md:text-[128px] text-[40px] font-[700] mr-4"
+            className="lg:flex-[25%] text-center lg:text-[128px] text-[40px] font-[700] mr-4"
             style={{
               color: "transparent",
               WebkitTextStroke: "1px #B1CEF5",
@@ -16,7 +19,7 @@ function How_it_works() {
           >
             1
           </h1>
-          <div className="md:flex-[50%]">
+          <div className="lg:flex-[50%]">
             <h1 className="text-[18px] text-[#0D3266] font-[700]">
               Choose a Vehicle
             </h1>
@@ -32,9 +35,9 @@ function How_it_works() {
         </div>
         {/*  */}
         {/*  */}
-        <div className=" flex md:items-center items-start  bg-[#E8FCF4] border border-[#ADF5D6] md:w-[525px] w-full h-[297px] md:px-[30px] pl-5 pr-5 md:mb-0 mb-6 py-[20px] rounded-lg">
+        <div className=" flex lg:items-center items-start  bg-[#E8FCF4] border border-[#ADF5D6] lg:w-[100%] w-full h-[297px] lg:px-[30px]  pl-5 pr-5 lg:mb-0 mb-6 py-[20px] rounded-lg">
           <h1
-            className="md:flex-[25%] text-center md:text-[128px] text-[40px] font-[700] mr-4"
+            className="lg:flex-[25%] text-center lg:text-[128px] text-[40px] font-[700] mr-4"
             style={{
               color: "transparent",
               WebkitTextStroke: "1px #ADF5D6",
@@ -68,9 +71,9 @@ function How_it_works() {
         </div>
         {/*  */}
         {/*  */}
-        <div className=" flex md:items-center items-start  bg-[#FDF3E8] border border-[#F4C790] md:w-[525px] w-full h-[297px] md:px-[30px] pl-5 pr-5 md:mb-0 mb-6 py-[20px] rounded-lg md:mt-[-1.5rem]">
+        <div className=" flex lg:items-center items-start  bg-[#FDF3E8] border border-[#F4C790] lg:w-[100%] w-full h-[297px] lg:px-[30px]  pl-5 pr-5 lg:mb-0 mb-6 py-[20px] rounded-lg lg:mt-[-4rem]">
           <h1
-            className="md:flex-[25%] text-center md:text-[128px] text-[40px] font-[700] mr-4"
+            className="lg:flex-[25%] text-center lg:text-[128px] text-[40px] font-[700] mr-4"
             style={{
               color: "transparent",
               WebkitTextStroke: "1px #F4C790",
@@ -78,7 +81,7 @@ function How_it_works() {
           >
             3
           </h1>
-          <div className="md:flex-[50%]">
+          <div className="lg:flex-[50%]">
             <h1 className="text-[18px] text-[#CC7914] font-[700]">
               Make Regular Payments
             </h1>
@@ -102,9 +105,9 @@ function How_it_works() {
           </div>
         </div>
         {/*  */}
-        <div className=" flex md:items-center items-start  bg-[#F2F2F2] border border-[#CCCBCB] md:w-[525px] w-full md:h-[250px] h-[200px] md:px-[30px] pl-5 pr-5 md:mb-0 mb-6 py-[20px] rounded-lg md:mt-[2rem]">
+        <div className=" flex lg:items-center items-start  bg-[#F2F2F2] border border-[#CCCBCB] lg:w-[100%] w-full lg:h-[250px] h-[200px] lg:px-[30px]  pl-5 pr-5 lg:mb-0 mb-6 py-[20px] rounded-lg ">
           <h1
-            className="md:flex-[25%] text-center md:text-[128px] text-[40px] font-[700] mr-4 "
+            className="lg:flex-[25%] text-center lg:text-[128px] text-[40px] font-[700] mr-4 "
             style={{
               color: "transparent",
               WebkitTextStroke: "1px #CCCBCB",
@@ -112,7 +115,7 @@ function How_it_works() {
           >
             4
           </h1>
-          <div className="md:flex-[50%]">
+          <div className="lg:flex-[50%]">
             <h1 className="text-[18px] text-[#433F3E] font-[700]">
               Build Equity
             </h1>
@@ -129,9 +132,9 @@ function How_it_works() {
         </div>
         {/*  */}
         {/*  */}
-        <div className=" flex md:items-center items-start  bg-[#FCE8EA] border border-[#F5B2B9] md:w-[525px] w-full h-[297px] md:px-[30px] pl-5 pr-5 md:mb-0 mb-6 py-[20px] rounded-lg mt-[1rem]">
+        <div className=" flex lg:items-center items-start  bg-[#FCE8EA] border border-[#F5B2B9] lg:w-[100%] w-full h-[297px] lg:px-[30px]  pl-5 pr-5 lg:mb-0 mb-6 py-[20px] rounded-lg">
           <h1
-            className="md:flex-[25%] text-center md:text-[128px] text-[40px] font-[700] mr-4 "
+            className="lg:flex-[25%] text-center lg:text-[128px] text-[40px] font-[700] mr-4 "
             style={{
               color: "transparent",
               WebkitTextStroke: "1px #F5B2B9",
@@ -139,7 +142,7 @@ function How_it_works() {
           >
             5
           </h1>
-          <div className="md:flex-[50%]">
+          <div className="lg:flex-[50%]">
             <h1 className="text-[18px] text-[#9B1422] font-[700]">
               Make Regular Payments
             </h1>

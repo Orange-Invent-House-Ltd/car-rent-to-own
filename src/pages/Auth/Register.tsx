@@ -59,15 +59,13 @@ const Register: React.FC = () => {
   };
 
   return (
-    <div
-      style={{ backgroundImage: `url(${authbg})` }}
-      className="bg-cover bg-center min-h-screen flex justify-center items-center"
-    >
-      <div className="md:w-[707px] w-[349px] h-auto bg-[#FAFAFA] bg-opacity-50 backdrop-blur-md rounded-[18px] p-10">
+    <div className=" grid md:grid-cols-2 items-center md:min-h-screen">
+      <img src={authbg} alt="" className="h-[100%] flex" />
+      <div className=" bg-[#FAFAFA] bg-opacity-50 backdrop-blur-md rounded-[18px] md:px-[4rem] p-10 min-h-screen">
         <div className="">
           <Link to="/" className="flex items-center">
             <img src={logo} alt="My Balance Logo" className="cursor-pointer" />
-            <p className="text-primary ml-2 text-[18px]">rent2own</p>
+            <p className="text-primary-light ml-2 text-[18px]">rent2own</p>
           </Link>
         </div>
         <h1 className="md:text-[36px] text-[24px] text-[#0A0B0A] mt-3">
@@ -117,7 +115,7 @@ const Register: React.FC = () => {
               <select
                 id="gender"
                 {...register("gender")}
-                className="block w-full border-2 border-[#CCCBCB] rounded-md p-1 outline-none focus:border-[#CCCBCB] bg-transparent text-[#0A0B0A] disabled:opacity-75 disabled:hover:cursor-not-allowed"
+                className="block w-full border-2 border-[#CCCBCB] rounded-md p-2 outline-none focus:border-[#CCCBCB] bg-transparent text-[#0A0B0A] disabled:opacity-75 disabled:hover:cursor-not-allowed"
               >
                 <option value="" disabled className="text-[#868686]">
                   Select a gender
@@ -157,14 +155,14 @@ const Register: React.FC = () => {
                 />
               </div>
             </div>
-            <button className="w-full bg-primary py-2 px-[4rem] rounded-[6px] text-white mt-6">
+            <button className="w-full bg-primary-light py-2 px-[4rem] rounded-[6px] text-white mt-6">
               Sign up
             </button>
           </form>
         </FormProvider>
         <p className="text-[#0A0B0A] text-[14px] w-full mt-4 md:text-center">
           Existing user?{" "}
-          <Link to="/sign-in" className="text-primary">
+          <Link to="/sign-in" className="text-primary-light">
             Sign in
           </Link>
         </p>

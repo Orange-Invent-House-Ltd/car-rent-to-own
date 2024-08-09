@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-secondary-dark w-full md:pl-[21%] md:pr-[16%] md:pb-3 py-10 md:flex block gap-11 mt-[-6rem]">
+    <section className="bg-secondary-dark w-full lg:pl-[21%] lg:pr-[16%] md:pb-3 py-10 md:flex block gap-11 contactpad" id="contact">
       <div className="px-3 md:w-[50%]">
         <h1 className="md:text-[36px] text-[24px] md:leading-[43.2px] leading-[28.8px] text-[#ffffff]">
           Reach Out To Us
@@ -134,7 +134,7 @@ const Contact = () => {
                 You agree to our friendly privacy policy.
               </p>
             </div>
-            <button className="w-full bg-primary py-4 px-[4rem] rounded-[16px] text-white mt-6">
+            <button className="w-full bg-primary-light py-4 px-[4rem] rounded-[16px] text-white mt-6">
               Send message
             </button>
           </form>

@@ -1,46 +1,50 @@
-import React from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+// Slider Component
 
-interface SliderProps {
-  slides: string[];
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+interface SlideType {
+  slides: [];
 }
 
-const Slider: React.FC<SliderProps> = ({ slides }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel();
-
+function Slider({ slides }: SlideType) {
   return (
-    <div className="embla relative">
-      <div
-        className="bg-secondary-dark md:w-full md:h-[730px] w-full min-h-[333px] rounded-br-[23px] rounded-bl-[23px] rounded-tl-none rounded-tr-none overflow-hidden"
-        ref={emblaRef}
+    <div className="w-full bg-secondary-dark rounded-br-[25px] rounded-bl-[25px] overflow-hidden">
+      <Carousel
+        opts={{
+          loop: true,
+        }}
+        plugins={[
+          Autoplay({
+            delay: 9000,
+          }),
+        ]}
+        className="w-full md:max-w-[100%] md:h-full  h-[343px] relative"
       >
-        <div className="embla__container flex">
-          {slides.map((item, index) => (
-            <div className="embla__slide min-w-full" key={index}>
-              <img
-                src={item}
-                alt={`Slide ${index + 1}`}
-                className="object-cover md:h-[730px] h-[333px] w-full"
-              />
-            </div>
+        <CarouselContent className="md:h-[730px] h-[343px]">
+          {slides.map((img, index) => (
+            <CarouselItem key={index} className="md:h-[730px]  h-[343px]">
+              <div className=" ">
+                <img
+                  src={img}
+                  alt=""
+                  className="md:h-[730px]  h-[343px] w-full object-cover"
+                />
+              </div>
+            </CarouselItem>
           ))}
-        </div>
-      </div>
-      <button
-        className="embla__button embla__button--prev absolute top-1/2 left-4 transform -translate-y-1/2 text-white p-2 rounded-full"
-        onClick={() => emblaApi?.scrollPrev()}
-      >
-        <ChevronLeft />
-      </button>
-      <button
-        className="embla__button embla__button--next absolute top-1/2 right-4 transform -translate-y-1/2 text-white p-2 rounded-full"
-        onClick={() => emblaApi?.scrollNext()}
-      >
-        <ChevronRight />
-      </button>
+        </CarouselContent>
+        <CarouselPrevious className="absolute left-2 top-[50%]  bg-secondary-dark text-white border-none " />
+        <CarouselNext className="absolute right-2 top-[50%]   bg-secondary-dark text-white border-none " />
+      </Carousel>
     </div>
   );
-};
+}
 
 export default Slider;
