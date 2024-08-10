@@ -15,7 +15,7 @@ const Footer = () => {
                 alt="My Balance Logo"
                 className="cursor-pointer w-[20%] "
               />
-              <p className="text-primary">rent2own</p>
+              <p className="text-primary">Rent2OwnAuto</p>
             </Link>
             <p className="text-wrap md:text-[15px] text-[16px] mt-2 font-light">
               Rent-to-own (RTO) is a flexible option that allows individuals to
@@ -113,7 +113,7 @@ const Footer = () => {
       {/* Desktop */}
       <div className="  mt-[4rem] px-[2rem] pb-6 md:flex hidden justify-between items-end border-t border-t-gray-300 ">
         <p className=" text-[16px]  ">
-          &copy; 2024 CarRentToOwn. All rights reserved.
+          &copy; 2024 Rent2OwnAuto. All rights reserved.
         </p>
         <ul className="flex gap-5 items-center mt-8">
           {socialLinks?.map((item) => (
@@ -137,7 +137,7 @@ const Footer = () => {
           ))}
         </ul>
         <p className=" text-[16px] mt-7">
-          &copy; 2024 CarRentToOwn. All rights reserved.
+          &copy; 2024 Rent2OwnAuto. All rights reserved.
         </p>
       </div>
     </footer>
