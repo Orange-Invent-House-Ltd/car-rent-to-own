@@ -44,7 +44,7 @@ const Contact = () => {
             Our friendly team is here to help.
           </p>
           <p className="text-[16px] text-[#1C6CDB] font-light leading-[16.8px] pr-[25px] mt-3">
-            hi@carrenttoown.com.au
+            prorichauto@gmail.com
           </p>
         </div>
         <div className="">
@@ -56,7 +56,8 @@ const Contact = () => {
             Mon-Fri from 8am to 5pm.
           </p>
           <p className="text-[16px] text-[#1C6CDB] font-light leading-[16.8px] pr-[25px] mt-3">
-            +1 (555) 000-0000
+            +61 (046) 609-2198
+            
           </p>
         </div>
         <div className="">
@@ -68,7 +69,7 @@ const Contact = () => {
             Come say hello at our office HQ.
           </p>
           <p className="text-[16px] text-[#1C6CDB] font-light leading-[16.8px] pr-[15px] mt-3">
-            100 Smith Street Collingwood VIC 3066 AU
+            1801 Ipswich Road, Rocklea, QLD 4106
           </p>
         </div>
         <ul className="flex gap-5 items-center my-8 ">
