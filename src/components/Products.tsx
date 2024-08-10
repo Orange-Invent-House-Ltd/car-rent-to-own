@@ -125,11 +125,11 @@ const Products = () => {
         ))}
       </div>
 
-      <div className="w-full text-center mt-5">
+      {/* <div className="w-full text-center mt-5">
         <button className="bg-[#86E900] text-[#fff] text-[12px] py-3 px-10  rounded-md transition-all duration-500 ease-out  hover:bg-primary-light">
           Load more
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };
