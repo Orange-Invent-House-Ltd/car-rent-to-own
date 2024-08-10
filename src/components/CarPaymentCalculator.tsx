@@ -101,7 +101,7 @@ const CarPaymentCalculator: React.FC<typeOfP> = ({ currentCar, Loading }) => {
         </div>
         <div className="w-full text-center px-7">
           <button className="bg-[#86E900] text-[#fff] text-[16px] py-3 px-10  rounded-md transition-all duration-500 ease-out  hover:bg-primary-light w-full">
-            Load more
+            <a href ="tel: +610466092198">Contact Us</a>
           </button>
         </div>
         <p className="text-[#5A5555] text-[12px] w-full text-center mt-4  ">
