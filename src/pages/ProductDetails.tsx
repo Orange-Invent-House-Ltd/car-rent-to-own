@@ -72,18 +72,15 @@ const ProductDetails = () => {
                 Genenral Information
               </h1>
               <p className="text-[#2B2928] text-[14px] leading-[16.8px] mt-5">
-                Lorem ipsum dolor sit amet consectetur. A interdum vel nam
-                pellentesque turpis mi lacus mus lorem. Ultrices vitae volutpat
-                posuere facilisis eu nec. Odio posuere amet dignissim vitae quam
-                ut enim sem amet. Fusce sit gravida pharetra venenatis sodales
-                sit erat donec rhoncus.
+                Established in the year 1977, Geely is one of the popular Chinese car 
+                brands that operates as a subsidiary under the umbrella of the 
+                Zhejiang Geely Holding Group. 
               </p>
               <p className="text-[#2B2928] text-[14px] leading-[16.8px] mt-5">
-                Lorem ipsum dolor sit amet consectetur. A interdum vel nam
-                pellentesque turpis mi lacus mus lorem. Ultrices vitae volutpat
-                posuere facilisis eu nec. Odio posuere amet dignissim vitae quam
-                ut enim sem amet. Fusce sit gravida pharetra venenatis sodales
-                sit erat donec rhoncus.
+                This auto manufacturer boasts a diverse lineup including sedans,
+                SUVs, MPVs and crossovers, providing a comprehensive range
+                of options to car enthusiasts. That said, the Monjaro by Geely AGMC
+                accelerates from 0 to 100 km/h in a mere 7.7 seconds. 
               </p>
             </div>
             {/*  */}
