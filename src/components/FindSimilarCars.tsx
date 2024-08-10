@@ -36,7 +36,7 @@ const FindSimilarCars = () => {
                     className=" w-full md:h-[245px] h-[108px] object-cover cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.1]"
                   />
                 </div>
-                <h1 className="my-4 px-2 text-[#151413] md:text-[18px] text-[11px]">
+                <h1 className="my-4 px-2 text-[#151413] md:text-[18px] text-[11px] h-[50px]">
                   {item.name}
                 </h1>
                 <div className="px-2">

@@ -60,6 +60,9 @@ export function MultiSlides() {
       ]}
       className="w-full"
     >
+      <p className=" w-full md:text-[37px] text-[25px] text-[#2B2928] text-wrap leading-10 font-black mb-4">
+        Featured
+      </p>
       <Bbutton
         text="All Cars"
         onClick={() => handleFilter("all")}
@@ -95,7 +98,7 @@ export function MultiSlides() {
                 <img
                   src={car.image}
                   alt=""
-                  className="object-cover md:h-[300px] md:w-[450px] h-[250px] w-[300px] rounded-md "
+                  className="object-cover md:h-[300px] md:w-[450px] h-[250px] w-[300px] rounded-md aspect-square"
                 />
                 <h1 className="my-4 px-2 text-[#151413] text-[18px]">
                   {car.name}

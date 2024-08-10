@@ -171,15 +171,18 @@ body {
     width: 80%;
   }
   .product {
-    padding: 2rem 2rem;
+    padding: 2rem 5rem;
   }
 
   .how-it-works {
-    padding: 2rem 9rem;
+    padding: 2rem 2rem;
   }
 
   .bannerimg {
     transform: translateY(60%);
+  }
+  .calcbox {
+    margin-top: -6.2rem;
   }
   .contactpad {
     padding: 2rem 3rem;
@@ -228,6 +231,30 @@ body {
 
 }
 */
+
+@media screen and (min-width: 1200px) {
+  .headertxt h1 {
+    font-size: 74px;
+  }
+  .sociallink img {
+    margin-bottom: -4rem;
+  }
+  .bannerimg {
+    transform: translateY(50%);
+  }
+  .product {
+    padding-left: 21%;
+    padding-right: 21%;
+  }
+  .how-it-works {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+  .calcbox {
+    margin-top: -7rem;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   .headertxt h1 {
     font-size: 74px;
@@ -238,6 +265,17 @@ body {
   .bannerimg {
     transform: translateY(50%);
   }
+  .how-it-works {
+    padding-left: 21%;
+    padding-right: 21%;
+  }
+  .calcbox {
+    margin-top: -7.9rem;
+  }
+  /* .product {
+    padding-left: 21%;
+    padding-right: 21%;
+  } */
 }
 
 @media screen and (min-width: 1870px) {

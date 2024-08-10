@@ -38,7 +38,7 @@ const CarPaymentCalculator: React.FC<typeOfP> = ({ currentCar, Loading }) => {
   };
   return (
     <>
-      <div className="relative m-auto md:w-[365px] md:min-h-[350px] bg-white rounded-[10px] overflow-hidden lg:mt-[-7.9rem] mt-[-5rem] z-40 md:block hidden">
+      <div className="relative m-auto md:w-[365px] md:min-h-[350px] bg-white rounded-[10px] overflow-hidden  calcbox  mt-[-5rem] z-40 md:block hidden">
         <div className="text-[30px] bg-secondary-light text-center text-white h-[71px]  p-5">
           {Loading ? (
             <p>Loading....</p>
@@ -148,12 +148,12 @@ const CarPaymentCalculator: React.FC<typeOfP> = ({ currentCar, Loading }) => {
               <TextFeildCalculate
                 name="weeklypayment"
                 label="Weekly payment"
-                placeholder="$400"
+                placeholder=" $400"
               />
             </div>
 
             <button className="w-full bg-primary-light py-2 px-[4rem] rounded-[6px] text-white mt-6">
-              Send message
+              Calculate
             </button>
             <p className="text-[#E3E3E3] text-[12px] w-full  mt-4 font-[300] ">
               This repayment calculator only gives you an estimate of what your

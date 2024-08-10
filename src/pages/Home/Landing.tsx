@@ -33,12 +33,12 @@ const Landing = () => {
           </div>
           {/*  */}
           <div className="flex  flex-col justify-center items-center bg-[#fff] w-full py-[4rem] ">
-            <div className="lg:w-[26%] w-full text-center firstpara-ad ">
+            <div className="lg:w-[40%] w-full text-center firstpara-ad ">
               <h1 className="text-secondary-light text-[16px] mb-3">
                 ADVANTAGES
               </h1>
               <p className=" w-full md:text-[37px] text-[25px] text-[#2B2928] text-wrap leading-10 font-black px-8">
-                Why You Should Choose Car Rent-To-Own
+                Why You Should Choose Rent To Own
               </p>
             </div>
             <div className="mt-5 md:flex block gap-7 md:px-0 px-6 ">

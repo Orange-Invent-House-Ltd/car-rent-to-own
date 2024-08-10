@@ -18,7 +18,7 @@ const Products = () => {
   };
 
   return (
-    <section className="w-full bg-gray-50 lg:px-[21%] px-3 lg:py-[6rem] py-10 product">
+    <section className="w-full bg-gray-50  px-3 lg:py-[6rem] py-10 product">
       <p className=" w-full md:text-[37px] text-[25px] text-[#2B2928] text-wrap leading-10 font-black mb-9">
         Explore
       </p>
@@ -28,7 +28,7 @@ const Products = () => {
             <div
               className={`lg:w-[96%] w-full min-h-[480px] bg-white rounded-[12px] overflow-hidden ${
                 item.id > 6 ? "hidden " : ""
-              }`}
+              }  product-box`}
               key={item.id}
             >
               <div className="w-full h-[245px] overflow-hidden flex justify-center">
@@ -38,7 +38,7 @@ const Products = () => {
                   className="w-full h-[245px] object-cover cursor-pointer transition-all duration-500 ease-in-out hover:scale-[1.1]"
                 />
               </div>
-              <h1 className="my-4 px-2 text-[#151413] text-[18px]">
+              <h1 className="my-4 px-2 text-[#151413] text-[18px] h-[50px]">
                 {item.name}
               </h1>
               <div className="px-2">

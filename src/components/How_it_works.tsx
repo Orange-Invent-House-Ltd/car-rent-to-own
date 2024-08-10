@@ -1,7 +1,7 @@
 function How_it_works() {
   return (
     <section
-      className="w-full bg-[#fff] lg:px-[21%] px-3 lg:py-[6rem] py-10 how-it-works "
+      className="w-full bg-[#fff]  px-3 lg:py-[6rem] py-10 how-it-works "
       id="howitworks"
     >
       <p className=" w-full lg:text-[37px] text-[24px] text-[#2B2928] text-wrap leading-10 font-black lg:mb-9 mb-2">

@@ -57,7 +57,7 @@ const ProductDetails = () => {
             <MobileSquareDetails currentCar={currentCar} Loading={Loading} />
           </div>
           <div className="flex-[45%]">
-            <h1 className="md:text-[36px] text-[24px] text-[#2B2928] px-1 leading-[43.2px]">
+            <h1 className="md:text-[36px] text-[24px] text-[#2B2928] px-1 leading-[43.2px] ">
               {currentCar?.name}
             </h1>
             <p className="flex items-center px-1 text-[#726C6C] text-[16px] leading-[19.2px]">
